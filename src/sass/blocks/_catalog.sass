@@ -1,12 +1,19 @@
 .catalog
-    padding-bottom: 200px
+    background: url('../img/bg-catal.png') no-repeat
+    background-size: cover
+    padding-bottom: 70px
     &__item
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15)
+        width: 700px
+        margin: 0 auto
         margin-bottom: 19px
+        border-radius: 10px 10px 15px 15px
+        padding: 2px
     &__target
         color: #5a5a5a
         font-size: 16px
         font-weight: 400
-        margin-bottom: 50pxs
+        margin-bottom: 50px
     &__header
         color: #4d63aa
         font-size: 40px
@@ -16,23 +23,13 @@
         font-weight: 500
     &__accordion 
         background-color: #fff
-        height: 91px
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15)
+        height: 91px    
         color: #000000
-        font-family: Roboto
-        font-size: 16px
-        font-weight: 400
         cursor: pointer
-        padding: 34px
-        width: 700px
-        border: none
-        outline: none
         font-size: 18px
-        transition: 1s
         margin: 0 auto
-        display: block
-        border-radius: 10px
         position: relative
+        border-radius: 10px 10px 0px 0px
         padding-right: 80px
         &:after 
             content: ''
@@ -50,25 +47,28 @@
         position: absolute 
         top: 26px
         left: 200px
+        &_ans
+            left: 65px
+
 
     &__panel 
         padding: 0 18px
         position: relative
-        color: #212121
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15)
+        color: #212121    
         background: #fff
         max-height: 0
         overflow: hidden
-        transition: max-height 0.3s ease-out
-        width: 700px
-        margin: 0 auto
-        
+        border-radius: 0px 0px 10px 10px
+        transition: max-height 0.3s ease-out      
     &__wrapper
         display: flex
         flex-direction: column
         width: 45%
         margin: 0 auto
-    
+        &_ans
+            width: 86%
+            margin-bottom: 55px
+
     img
         width: 259px
         height: 173px  
