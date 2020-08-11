@@ -1,0 +1,67 @@
+.steps
+	padding: 62px 0 49px
+	&__wrapper
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		margin-top: 90px
+	&__item
+		width: 300px
+		text-align: right
+		margin-right: calc(50% - 150px)
+		position: relative
+		&:nth-of-type(2n-1)
+			margin-left: 70%
+			text-align: left
+			.steps__numb
+				left: -67px
+	&__numb
+		display: flex
+		justify-content: center
+		align-items: center
+		position: absolute
+		right: -70px
+		top: -5px
+		border: 1px solid $main-color
+		border-radius: 40px
+		background-color: $main-color
+		color: #ffffff
+		width: 38px
+		height: 38px
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			left: 17px
+			top: 35px
+			background-color: $main-color
+			width: 2px
+			height: 70px
+		&_last
+			&::after
+				content: ''
+				height: 0
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			left: 17px
+			top: -40px
+			background-color: $main-color
+			width: 2px
+			height: 40px
+		&_first
+			&::before
+				content: ''
+				height: 0
+	&__title
+		color: #000000
+		font-size: 20px
+		font-weight: 900
+	&__text
+		margin-top: 4px
+		color: #000000
+		font-family: Roboto
+		font-size: 16px
+		font-weight: 400
