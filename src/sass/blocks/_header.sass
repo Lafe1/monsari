@@ -1,0 +1,100 @@
+.header
+	padding: 80px 0 30px
+	background: url('../img/background.jpg') no-repeat
+	background-position: bottom center
+	background-size: cover
+	position: relative
+	&__wrapper
+		width: 610px
+	.button
+		margin-top: 24px
+	&__adv
+		position: relative
+		padding: 40px 25px 24px 54px
+		width: 610px
+		height: 256px
+		border-radius: 10px
+		background-color: rgba(39, 44, 72, 0.5);
+		margin-top: 105px
+		color: #fff
+		&-title
+			color: #fffdfd
+			font-size: 18px
+			font-weight: 300
+			line-height: 1.1
+		&-list
+			margin-top: 20px
+		&-item
+			color: #fffdfd
+			font-size: 18px
+			font-weight: 300
+			line-height: 1.1
+			margin-top: 43px
+			margin-left: 10px
+			position: relative
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left: -30px
+				top: 0
+				background: url('../icons/item.png') no-repeat
+				width: 30px
+				height: 30px
+				box-shadow: 7px -7px 0 1px rgba(256, 256, 256, 0.1)
+				border-radius: 10px
+	&__arrows
+		position: absolute
+		right: 25px
+		bottom: 25px
+		display: flex
+		justify-content: center
+		align-items: center
+	&__arrow
+		margin-right: 9px
+		width: 61px
+		height: 61px
+		background-color: $main-color
+		color: #ffffff
+		font-size: 16px
+		font-weight: 500
+		line-height: 24px
+		border: 1px solid $main-color
+		border-radius: 10px
+		transition: 0.5s
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			background-color: #fff
+	&__location
+		position: absolute
+		right: 85px
+		top: 80px
+		color: #fff
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			left: -26px
+			top: 5px
+			background: url('../icons/geo.png') no-repeat
+			width: 13px
+			height: 13px
+	&__add-dots
+		position: absolute
+		bottom: 29px
+		right: 85px
+		display: flex
+		justify-content: center
+		align-items: center
+	&__add-dot
+		display: block
+		width: 10px
+		height: 10px
+		border: 1px solid #ffffff
+		border-radius: 10px
+		margin-right: 14px
+		cursor: pointer
+		&_active
+			background-color: #fff
