@@ -12,23 +12,23 @@ $(document).ready(function(){
 		// find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
 	});
 
-});
-
-
-var acc = document.getElementsByClassName("catalog__accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-
-  acc[i].addEventListener("click", function() {
-
-	this.classList.toggle("active");
 	
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
+	var acc = document.getElementsByClassName("catalog__accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+
+		acc[i].addEventListener("click", function() {
+
+			this.classList.toggle("active");
+			
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight){
+			panel.style.maxHeight = null;
+			} else {
+			panel.style.maxHeight = panel.scrollHeight + "px";
+			} 
+		});
+	}
+
+});
