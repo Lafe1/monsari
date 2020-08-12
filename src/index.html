@@ -16,11 +16,11 @@
 <body>
 	<div class="nav">
 		<div class="container">
-			<div class="nav__wrapper">
+			<div style="display: none;" class="nav__wrapper">
 				<div class="nav__logo">
 					<img src="./icons/logo.png" alt="Logo">
 				</div>
-				<ul class="nav__menu">
+				<ul class="nav__menu nav__menu_toggle">
 					<li class="nav__item nav__item_active"><a href="#">Главная</a></li>
 					<li class="nav__item"><a href="#">Портфолио</a></li>
 					<li class="nav__item"><a href="#">Каталог</a></li>
@@ -28,12 +28,43 @@
 				</ul>
 				<div class="nav__contacts">
 					<div class="nav__phone">
+						<a href="tel:+788126468080">
 						<img src="./icons/phone.png" alt="Phone">
-						<a href="tel:+788126468080">8 (812) 646 80 80</a>
+						8 (812) 646 80 80</a>
 					</div>
 					<div class="nav__callback">
 						<button class="button">Бесплатная консультация</button>
 					</div>
+				</div>
+			</div>
+			<div class="nav__wrapper nav__wrapper_toggle">
+				<div class="nav__logo">
+					<img src="./icons/logo.png" alt="Logo">
+				</div>
+				<div class="nav__menu nav__menu_toggle">
+					<ul class="nav__list">
+						<li class="nav__item nav__item_toggle nav__item_toggle_active"><a href="#">Главная</a></li>
+						<li class="nav__item nav__item_toggle"><a href="#">Портфолио</a></li>
+						<li class="nav__item nav__item_toggle"><a href="#">Каталог</a></li>
+						<li class="nav__item nav__item_toggle"><a href="#">Контакты</a></li>
+					</ul>
+					<div class="nav__button-wrapper">
+						<a href="tel:+78003333828"><button class="button_toggle">Бесплатная консультация</button></a>
+						<a href="tel:+78003333828"><button class="button_toggle">8 (800) 333 38 28 </button></a>
+					</div>
+					<div class="nav__social-wrapper">
+						<a class="nav__social-item"><img src="icons/youtube2.png" alt=""></a>
+						<a class="nav__social-item"><img src="icons/facebook2.png" alt=""></a>
+						<a class="nav__social-item"><img src="icons/instagram2.png" alt=""></a>
+						<a class="nav__social-item"><img src="icons/social2.png" alt=""></a>
+					</div>
+				</div>
+				<div class="nav__contacts">
+					<div class="nav__phone nav__phone_toggle">
+						<a href="tel:+788126468080">
+						<img src="./icons/phone.png" alt="Phone"></a>
+					</div>
+					<a href="#" class="toggle-mnu"><span></span></a>
 				</div>
 			</div>
 		</div>
@@ -255,7 +286,7 @@
 				</div>
 			</div>
 
-			<h2 class="title title_white" style="text-align: left;">Возникли другие вопросы?</h2>
+			<h2 class="title title_white">Возникли другие вопросы?</h2>
 			<span class="answers__subheder">Заполните форму ниже, для получения бесплатной <br> 
 				консультации технического специалиста по телефону.</span>
 		</div>

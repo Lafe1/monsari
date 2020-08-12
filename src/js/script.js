@@ -31,13 +31,24 @@ $(document).ready(function(){
 		});
 	}
 
+	$(function() {
+		$('.pageup').click(function() {
+		  $("html, body").animate({
+			scrollTop:0
+		  },1000);
+		});
+	});
+
+	$(".toggle-mnu").click(function() {
+		$(this).toggleClass("on");
+		$('.nav__menu_toggle').slideToggle();
+		return false;
+	});
+	$(".nav__menu-item_toggle").click(function() {
+		$(".toggle-mnu").toggleClass("on");
+		$('.nav__menu_toggle').slideToggle();
+	});
+
 });
 
 
-$(function() {
-    $('.pageup').click(function() {
-      $("html, body").animate({
-        scrollTop:0
-      },1000);
-    })
-})
