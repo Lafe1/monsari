@@ -1,18 +1,73 @@
-@media (max-width: 989px)
-	.others__items
-		&:nth-child(2n+2)
+@media (max-width: 1140px)
+	.container
+		max-width: 950px
+	.nav
+		&__wrapper
+			display: none
+			&_toggle
+				display: flex
+	.steps
+		&__item
+			margin-right: calc(50% - 100px)
+			&:nth-of-type(2n-1)
+				margin-left: 799px
+				.steps__numb
+					left: -67px
+@media (max-width: 991px)
+	.container
+		max-width: 700px
+	.header
+		&__location
+			left: 30px
+			top: -50px
+		&__add-dots
+			bottom: -20px
+			right: 50%
+	.steps
+		&__item
+			margin-right: calc(50% + 100px)
+			&:nth-of-type(2n-1)
+				margin-left: 799px
+				.steps__numb
+					left: -67px
+@media (max-width: 767px)
+	.container
+		max-width: 500px
+	.header
+		&__wrapper
+			width: 500px
+		&__adv
+			width: 400px
+			background: none
+		&__arrow
+			display: none
+		.button
+			display: block
+			width: 80%
+			height: 60px
+			margin: 150px auto 0 auto
+	.steps
+		padding: 62px 0 49px
+		&__wrapper
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			margin-top: 90px
+		&__item
+			width: 400px
+			text-align: left
 			margin-right: 0
-			
-
-	
-@media (max-width: 869px)
-	.clients__item
-		&:nth-child(2n+2)
-			margin-right: 0
-			
-@media (max-width: 766px)             
-	.title
-		font-size: 21px
+			margin-top: 20px
+			margin-left: 50px
+			&:nth-of-type(2n-1)
+				margin-left: 50px
+				text-align: left
+				.steps__numb
+					left: -70px
+		&__numb
+			left: -70px
+			top: 0
 	.contacts
 		padding-top: 0
 	.catalog__accordion-name
@@ -25,7 +80,7 @@
 			right: 10px
 	.active
 		&:after
-			top: 30px    
+			top: 30px
 	.title
 		&_blue
 			margin-bottom: 25px
@@ -36,7 +91,7 @@
 	.others
 		padding-top: 0
 	.callback__input
-		width: 258px   
+		width: 258px
 		&::placeholder
 			padding-left: 10px
 			font-size: 12px
@@ -61,12 +116,39 @@
 		margin-bottom: 30px
 	.footer__social
 		justify-content: center
-
+	.contacts__map
+		width: 290px
+		height: 227px
+		iframe
+			width: 290px
+			height: 227px
 @media (max-width: 598px)
 	.others__items
 		margin-right: 0
 		
 @media (max-width: 595px)
+	.container
+		width: 300px
+	.nav
+		&__wrapper
+			&_toggle
+				justify-content: space-between
+		&__phone
+			&_toggle
+				right: 60px
+	.header
+		&__wrapper
+			width: 500px
+		&__adv
+			width: 400px
+			background: none
+		&__arrow
+			display: none
+		.button
+			display: block
+			width: 250px
+			height: 60px
+			margin: 150px auto 0 auto
 	.clients__item
 		margin-right: 0
 	.contacts__wrapper
@@ -74,6 +156,9 @@
 	.contacts__map
 		width: 290px
 		height: 227px
+		iframe
+			width: 290px
+			height: 227px
 @media (max-width: 320px)
 	.advantages__grid 
 		flex-direction: column
