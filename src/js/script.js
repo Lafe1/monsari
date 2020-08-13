@@ -79,3 +79,33 @@ var slider1 = '.p-slider__list';
     ]
       
 });
+
+
+var slider3 = '.quality-slider__list';
+    $(slider3).slick({
+		slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        centerMode: true,
+        variableWidth: true,
+        cssEase: 'ease',
+        useCSS: true,
+        edgeFriction: 0.15,
+        centerPadding: '0px',
+        prevArrow:'.quality-slider__prev',
+        nextArrow:'.quality-slider__next',
+        edgeFriction: 0.15,
+        centerPadding: '0px',
+        dots: false,
+        responsive: [
+            {
+            breakpoint: 414,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false
+            }
+        }
+    ]
+      
+});
