@@ -39,7 +39,7 @@
 						8 (812) 646 80 80</a>
 					</div>
 					<div class="nav__callback">
-						<button class="button">Бесплатная консультация</button>
+						<button class="button" data-modal='consultation'>Бесплатная консультация</button>
 					</div>
 				</div>
 			</div>
@@ -244,6 +244,37 @@
 
 
 			
+	</section>
+
+
+	<section class="create">
+		<div class="container">
+			<h2 class="title title_white title_absolute">Изготовление ограждений</h2>
+			<div class="create__list">
+				 <div class="create__item">
+					<div class="create__item__header">Для улицы</div>
+					<div class="create__item__content">
+						Компания «Летний сад» проектирует, производит и монтирует уличные ограждения для террас, пандусов, парапетов используя специальную нержавеющую сталь марки AISI 304, которая обладает превосходными прочностными и антикоррозийными свойствами. 
+						<br>
+						<br>
+						Разнообразие и стильный дизайн ограждающих конструкций сможет подчеркнуть экстерьер любого здания.
+					</div>
+				 </div>
+
+				 <div class="create__item">
+					<div class="create__item__header">Для улицы</div>
+					<div class="create__item__content">
+						Компания «Летний сад» проектирует, производит и монтирует уличные ограждения для террас, пандусов, парапетов используя специальную нержавеющую сталь марки AISI 304, которая обладает превосходными прочностными и антикоррозийными свойствами. 
+						<br>
+						<br>
+						Разнообразие и стильный дизайн ограждающих конструкций сможет подчеркнуть экстерьер любого здания.
+					</div>
+				 </div>
+				  
+			</div>
+
+
+		</div>
 	</section>
 
 
@@ -617,12 +648,39 @@
 				 </div>
 
 				 <div class="footer__button">
-					 <button class="footer__button-item">Связаться с нами</button>
+					 <button class="footer__button-item" data-modal='consultation' >Связаться с нами</button>
 				 </div>
 			 </div>
 		</div>
 	</footer>
 
+
+	<div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Получите бесплатную консультацию специалиста. <br> Для этого заполните форму ниже</div>
+            <form class="feed-form" action="#">
+                <input name="name" required type="text" placeholder="Ваше имя">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required type="email" placeholder="Ваш E-mail">
+                <button class="button button_submit">Отправить</button>
+			</form>
+			
+			<p class="modal__politic">
+				Нажимая на кнопку, вы даете согласие на обработку персональных данных и принимаете 
+				<a href="#">политику соглашения</a>
+			</p>
+        </div>
+
+     
+
+            <div class="modal modal_mini" id="thanks">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+                <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+            </div>
+
+    </div>
 
 <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
