@@ -51,6 +51,23 @@ $(document).ready(function(){
 		$('.nav__menu_toggle').slideToggle();
 	});
 
+  let line = document.querySelectorAll('.steps__line');
+  let stepItem = document.querySelectorAll('.steps__item');
+  for(let i = 0; i < line.length; i++) {
+    if(i == (line.length-1)) {
+      line[i].style.height = '0';
+    } else {
+      line[i].style.height = stepItem[i].offsetHeight + 'px';
+    }
+  }
+
+  // $('.steps__line').each(function(i, item){
+  //   console.log(item[i]);
+  //   item[i].css(
+  //     'height', item[i].parent().height()
+  //   );
+  // });
+
 });
 
 
