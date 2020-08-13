@@ -54,6 +54,7 @@ $(document).ready(function(){
   let line = document.querySelectorAll('.steps__line');
   let stepItem = document.querySelectorAll('.steps__item');
   for(let i = 0; i < line.length; i++) {
+    console.log(stepItem[i].offsetHeight + 'px')
     if(i == (line.length-1)) {
       line[i].style.height = '0';
     } else {
