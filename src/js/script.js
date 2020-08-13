@@ -14,6 +14,7 @@ $(document).ready(function(){
 
 	
 	var acc = document.getElementsByClassName("catalog__accordion");
+ 
 	var i;
 
 	for (i = 0; i < acc.length; i++) {
@@ -21,7 +22,7 @@ $(document).ready(function(){
 		acc[i].addEventListener("click", function() {
 
 			this.classList.toggle("active");
-			
+			this.classList.toggle("borders");
 			var panel = this.nextElementSibling;
 			if (panel.style.maxHeight){
 			panel.style.maxHeight = null;
@@ -30,6 +31,7 @@ $(document).ready(function(){
 			} 
 		});
 	}
+ 
 
 	$(function() {
 		$('.pageup').click(function() {
@@ -52,3 +54,18 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+	$('.p-slider__list').slick({
+		slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        centerMode: true,
+        variableWidth: true,
+        cssEase: 'ease',
+        useCSS: true,
+        edgeFriction: 0.15,
+        centerPadding: '0px',
+        prevArrow:'.p-slider__prev',
+        nextArrow:'.p-slider__next',
+	});
+  });

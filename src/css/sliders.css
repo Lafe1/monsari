@@ -1,0 +1,257 @@
+
+.s-portfolio {
+    z-index: 1;
+    height: 810px;
+    padding: 60px 0 35px;
+    background-color: #f0f0f0
+}
+
+.s-portfolio:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 58%;
+    height: 450px;
+    content: '';
+    background-color: rgba(23,40,117,.8)
+}
+
+@media screen and (max-width: 1250px) {
+    .s-portfolio:after {
+        display:none
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .s-portfolio {
+        height:740px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .s-portfolio {
+        height:680px
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .s-portfolio {
+        height:630px
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .s-portfolio {
+        height:600px;
+        background-color: #fff;
+    }
+}
+
+.portfolio {
+    position: relative;
+    z-index: 1
+}
+
+.portfolio__list {
+    display: flex;
+    justify-content: center
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio__list {
+        display:none
+    }
+}
+
+/* @media screen and (max-width: 360px) {
+    .portfolio .p-slider__arrow {
+        position:relative;
+        top: -110px;
+        left: -95px;
+    }
+} */
+
+.portfolio .slick-list {
+    height: 600px;
+    padding: 50px 10px!important;
+}
+
+@media screen and (max-width: 1024px) {
+    .portfolio .slick-list {
+        height:480px;
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+    .portfolio .slick-list {
+        height:440px;
+    }
+}
+
+/* @media screen and (max-width: 360px) {
+    .portfolio .slick-list {
+        height:470px;
+        padding: 50px 10px 30px 10px!important;
+    }
+} */
+
+.portfolio__inner {
+    position: relative
+}
+
+.portfolio__item {
+    width: 50%;
+    max-width: 325px;
+    height: 470px;
+    margin-right: 280px;
+    border: 1px solid #000
+}
+
+.portfolio__item:last-child {
+    margin-right: 0
+}
+
+@media screen and (max-width: 1024px) {
+    .portfolio__item {
+        height:420px
+    }
+}
+
+.portfolio__title {
+    margin-bottom: 15px;
+    color: #fff
+}
+
+@media screen and (max-width: 1250px) {
+    .portfolio__title {
+        color:#4d63aa
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio__title {
+        margin-bottom:0
+    }
+}
+
+.p-slider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1124px;
+    transform: translateX(-50%)
+}
+
+.p-slider__icon {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    fill: #fff
+}
+
+.p-slider-arrow,.p-slider__arrow {
+    display: flex
+}
+
+.p-slider-arrow {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all .3s linear;
+    background-color: #272c48
+}
+
+.p-slider-arrow:hover {
+    background-color: #4d63aa
+}
+
+.p-slider__arrow {
+    margin-top: 10px;
+    justify-content: center
+}
+
+.p-slider__item {
+    position: relative;
+    width: 330px;
+    height: 490px;
+    margin-right: 35px;
+    transition: all .5s linear;
+    outline: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+.p-slider__item.slick-center {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px 2px #000;
+    opacity: 1;
+}
+
+.p-slider__item.slick-center:after {
+    background-color: transparent
+}
+
+.p-slider__item.slick-center:before {
+    position: absolute;
+    z-index: -1;
+    right: -20px;
+    bottom: -35px;
+    display: none;
+    width: 230px;
+    height: 350px;
+    content: '';
+    
+}
+
+@media screen and (max-width: 360px) {
+    .p-slider__item.slick-center:before {
+        display:block
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .p-slider__item.slick-center:before {
+        right:-10px
+    }
+}
+
+
+.p-slider__item:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(255,255,255,.8)
+}
+
+@media screen and (max-width: 1024px) {
+    .p-slider__item {
+        width:290px;
+        height: 385px
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .p-slider__item {
+        width:270px;
+        height: 350px;
+    }
+}
+
+.p-slider-arrow {
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.p-slider__prev {
+    margin-right: 5px;
+}
+
+.p-slider__next {
+    margin-left: 5px;
+}

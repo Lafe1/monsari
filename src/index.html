@@ -8,9 +8,15 @@
 	<!-- <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon"> -->
 	<title>Document</title>
 	<!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
+	
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="css/style.min.css">
+	 
 	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="css/sliders.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	
 	<!-- <script src="https://kit.fontawesome.com/05dbfec33e.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
@@ -115,18 +121,20 @@
 	<section class="catalog">
 		<div class="container">
 			<h2 class="title title_blue">Каталог ограждений</h2>
-
-			<div class="catalog__item">
-				<div class="catalog__accordion"> <span class="catalog__accordion-name">Ограждения для лестниц</span> </div>
-				<div class="catalog__panel">
-					<div class="catalog__wrapper">
-						<span class="catalog__target">Для любых целей</span>
-						<img src="img/rect.png" alt="">
-						<span class="catalog__price">от 11 570 руб.</span>
-						<button class="catalog__button">Подробнее</button>
+			 
+			 <div class="catalog__item">
+					<div class="catalog__accordion"> <span class="catalog__accordion-name">Ограждения для лестниц</span> </div>
+					<div class="catalog__panel">
+						<div class="catalog__wrapper">
+							<span class="catalog__target">Для любых целей</span>
+							<img src="img/rect.png" alt="">
+							<span class="catalog__price">от 11 570 руб.</span>
+							<button class="catalog__button">Подробнее</button>
+						</div>
 					</div>
 				</div>
-			</div>
+			 
+			
 
 			<div class="catalog__item">
 				<div class="catalog__accordion"> <span class="catalog__accordion-name">Ограждения для веранды  <br>
@@ -226,11 +234,14 @@
 						<span class="catalog__price">от 11 570 руб.</span>
 						<button class="catalog__button">Подробнее</button>
 					</div>
-				</div>
-			</div>
-		 	
-			
+				</div>  
+			</div>  
+		 
+			 
+
+
 		</div>
+
 
 			
 	</section>
@@ -243,7 +254,7 @@
 			</h2>
 
 			<div class="catalog__item">
-				<div class="catalog__accordion"> <span class="catalog__accordion-name catalog__accordion-name_ans">Сколько времени нужно на подготовку и на монтаж <br> перил из нержавеющей стали?</span> </div>
+				<div class="catalog__accordion"> <span class="catalog__accordion-name catalog__accordion-name_ans">Сколько времени нужно на подготовку и на монтаж перил из нержавеющей стали?</span> </div>
 				<div class="catalog__panel">
 					<div class="catalog__wrapper catalog__wrapper_ans">
 						<span >Сколько времени нужно на подготовку. Сколько времени нужно на подготовку. Сколько времени нужно на подготовку.</span>
@@ -482,6 +493,43 @@
 		</div>
 	</section>
 
+ 
+
+
+	<section class="s-portfolio" id="portfolio">
+		<div class="container">
+		  <div class="portfolio">
+			<h2 class="title title_blue">Портфолио</h2>
+			<div class="portfolio__inner">
+			  <div class="portfolio__list">
+				<div class="portfolio__item"></div>
+				<div class="portfolio__item"></div>
+			  </div>
+			  <div class="p-slider">
+				 <div class="p-slider__list">
+				 
+					 
+					 
+					<img class="p-slider__item"  src="img/slideit1.png" alt="">
+					<img class="p-slider__item"  src="img/slideit1.png" alt="">
+					<img class="p-slider__item"  src="img/slideit1.png" alt="">
+					<img class="p-slider__item"  src="img/slideit1.png" alt="">
+					<img class="p-slider__item"  src="img/slideit1.png" alt="">
+					<img class="p-slider__item"  src="img/slideit1.png" alt="">
+				</div>
+				<div class="p-slider__arrow">
+				  <div class="p-slider-arrow p-slider__prev">
+					<img src="icons/leftw.png" alt="">
+				  </div>
+				  <div class="p-slider-arrow p-slider__next">
+					<img src="icons/rigth.png" alt="">
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
 
 
 	<section class="contacts">
@@ -541,8 +589,11 @@
 			 </div>
 		</div>
 	</footer>
+
+
 <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
