@@ -15,6 +15,8 @@
 					left: -67px
 				.steps__line
 					left: -50px
+	.slick-dots
+		left: 900px !important
 @media (max-width: 991px)
 	.container
 		max-width: 700px
@@ -33,16 +35,25 @@
 				.steps__numb
 					left: -67px
 				.steps__line
-					left: -48px
+					left: -48.5px
+	.slick-dots
+		bottom: -60px !important
+		left: 300px !important
 @media (max-width: 767px)
 	.container
 		max-width: 500px
 	.header
+		.title
+			text-align: center
 		&__wrapper
 			width: 500px
 		&__adv
 			width: 400px
 			background: none
+			&-wrapper
+				padding-top: 40px
+				padding-left: 0
+				width: 300px
 		&__arrow
 			display: none
 		.button
@@ -190,6 +201,9 @@
 		iframe
 			width: 290px
 			height: 227px
+	.slick-dots
+		bottom: -60px !important
+		left: 150px !important
 @media (max-width: 320px)
 	.advantages__grid 
 		flex-direction: column
