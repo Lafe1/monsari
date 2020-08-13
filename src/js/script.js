@@ -54,9 +54,9 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function(){
-	$('.p-slider__list').slick({
-		slidesToShow: 3,
+var slider1 = '.p-slider__list';
+    $(slider1).slick({
+        slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
         centerMode: true,
@@ -67,5 +67,15 @@ $(document).ready(function(){
         centerPadding: '0px',
         prevArrow:'.p-slider__prev',
         nextArrow:'.p-slider__next',
-	});
-  });
+        responsive: [
+            {
+            breakpoint: 414,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+			  arrows: false,
+            }
+        }
+    ]
+      
+});
