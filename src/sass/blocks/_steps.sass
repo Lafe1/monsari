@@ -1,5 +1,7 @@
 .steps
 	padding: 62px 0 49px
+	&_product
+		padding-bottom: 105px
 	&__wrapper
 		display: flex
 		flex-direction: column
@@ -18,6 +20,19 @@
 				left: -67px
 			.steps__line
 				left: -48px
+		&_product
+			width: 900px
+			text-align: left
+			margin-right: 0
+			margin-top: 20px
+			margin-left: 50px
+			&:nth-of-type(2n-1)
+				margin-left: 50px
+				text-align: left
+				.steps__numb
+					left: -70px
+				.steps__line
+					left: -51px
 	&__numb
 		display: flex
 		justify-content: center
@@ -32,6 +47,9 @@
 		width: 38px
 		height: 38px
 		z-index: 5
+		&_product
+			left: -70px
+			top: 0
 	&__line
 		display: block
 		position: absolute
@@ -40,6 +58,9 @@
 		background-color: $main-color
 		width: 2px
 		z-index: 4
+		&_product
+			left: -50px
+			top: 30px
 	&__title
 		color: #000000
 		font-size: 20px
@@ -50,3 +71,5 @@
 		font-family: Roboto
 		font-size: 16px
 		font-weight: 400
+		&_product
+			width: 700px

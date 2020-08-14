@@ -51,15 +51,23 @@ $(document).ready(function(){
 		$('.nav__menu_toggle').slideToggle();
 	});
 
-  let line = document.querySelectorAll('.steps__line');
-  let stepItem = document.querySelectorAll('.steps__item');
-  for(let i = 0; i < line.length; i++) {
+  let resizeItem = function() {
+    let line = document.querySelectorAll('.steps__line');
+    let stepItem = document.querySelectorAll('.steps__item');
+    for(let i = 0; i < line.length; i++) {
     if(i == (line.length-1)) {
       line[i].style.height = '0';
     } else {
       line[i].style.height = stepItem[i].offsetHeight + 10 + 'px';
     }
   }
+  }
+
+  resizeItem();
+  $(window).resize(function() {
+    resizeItem();
+  });
+  
 
   // $('.steps__line').each(function(i, item){
   //   console.log(item[i]);
@@ -188,14 +196,6 @@ $('.button_mini').each(function(i) {
   ]
 });
 
-  //массив с фонами
-  // var bgs = [
-  //   '../img/background0.jpg',   //фон при переходе на 1 слайдер
-  //   '../img/background0.jpg', //фон при переходе на 2 слайдер
-  //   '../img/background0.jpg',  //фон при переходе на 3 слайдер
-  //   // .....
-  // ];
-
   //Смена фона
   let img = document.querySelectorAll('.header__img img');
   let bgs = [];
@@ -213,3 +213,13 @@ $('.button_mini').each(function(i) {
     })
   });
 
+$('.product__img').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    cssEase: 'ease',
+    prevArrow:'.product__prev',
+    nextArrow:'.product__next'
+  });
