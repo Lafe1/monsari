@@ -56,7 +56,7 @@
 						<li class="nav__item nav__item_toggle"><a href="#">Контакты</a></li>
 					</ul>
 					<div class="nav__button-wrapper">
-						<a href="tel:+78003333828"><button class="button_toggle">Бесплатная консультация</button></a>
+						<button class="button_toggle" data-modal='consultation'>Бесплатная консультация</button>
 						<a href="tel:+78003333828"><button class="button_toggle">8 (800) 333 38 28 </button></a>
 					</div>
 					<div class="nav__social-wrapper">
@@ -87,7 +87,7 @@
 				<h1 class="title">
 					Производство и монтаж ограждений под ключ
 				</h1>
-				<button class="button button_white">
+				<button class="button button_white" data-modal='consultation'>
 					Бесплатная консультация
 				</button>
 				<div class="header__adv">
@@ -139,7 +139,37 @@
 		</div>
 	</header>
 
-
+	<section class="s-portfolio" id="portfolio">
+		<div class="container">
+		  <div class="portfolio">
+			<h2 class="title title_blue">Портфолио</h2>
+			<div class="portfolio__inner">
+			  <div class="portfolio__list">
+				<div class="portfolio__item"></div>
+				<div class="portfolio__item"></div>
+			  </div>
+			  <div class="p-slider">
+				 <div class="p-slider__list">
+					<img class="p-slider__item"  src="img/slideit1.png" alt="">
+					<img class="p-slider__item"  src="img/slideit1.png" alt="">
+					<img class="p-slider__item"  src="img/slideit1.png" alt="">
+					<img class="p-slider__item"  src="img/slideit1.png" alt="">
+					<img class="p-slider__item"  src="img/slideit1.png" alt="">
+					<img class="p-slider__item"  src="img/slideit1.png" alt="">
+				</div>
+				<div class="p-slider__arrow">
+				  <div class="p-slider-arrow p-slider__prev">
+					<img src="icons/leftw.png" alt="">
+				  </div>
+				  <div class="p-slider-arrow p-slider__next">
+					<img src="icons/rigth.png" alt="">
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
 
 	<section class="catalog">
 		<div class="container">
@@ -152,7 +182,7 @@
 							<span class="catalog__target">Для любых целей</span>
 							<img src="img/rect.png" alt="">
 							<span class="catalog__price">от 11 570 руб.</span>
-							<button class="catalog__button">Подробнее</button>
+							<a href="product.html" class="catalog__button">Подробнее</a>
 						</div>
 					</div>
 				</div>
@@ -167,7 +197,7 @@
 						<span class="catalog__target">Для любых целей</span>
 						<img src="img/rect.png" alt="">
 						<span class="catalog__price">от 11 570 руб.</span>
-						<button class="catalog__button">Подробнее</button>
+						<a href="product.html" class="catalog__button">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -179,7 +209,7 @@
 						<span class="catalog__target">Для любых целей</span>
 						<img src="img/rect.png" alt="">
 						<span class="catalog__price">от 11 570 руб.</span>
-						<button class="catalog__button">Подробнее</button>
+						<a href="product.html" class="catalog__button">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -192,7 +222,7 @@
 						<span class="catalog__target">Для любых целей</span>
 						<img src="img/rect.png" alt="">
 						<span class="catalog__price">от 11 570 руб.</span>
-						<button class="catalog__button">Подробнее</button>
+						<a href="product.html" class="catalog__button">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -205,7 +235,7 @@
 						<span class="catalog__target">Для любых целей</span>
 						<img src="img/rect.png" alt="">
 						<span class="catalog__price">от 11 570 руб.</span>
-						<button class="catalog__button">Подробнее</button>
+						<a href="product.html" class="catalog__button">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -217,7 +247,7 @@
 						<span class="catalog__target">Для любых целей</span>
 						<img src="img/rect.png" alt="">
 						<span class="catalog__price">от 11 570 руб.</span>
-						<button class="catalog__button">Подробнее</button>
+						<a href="product.html" class="catalog__button">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -229,7 +259,7 @@
 						<span class="catalog__target">Для любых целей</span>
 						<img src="img/rect.png" alt="">
 						<span class="catalog__price">от 11 570 руб.</span>
-						<button class="catalog__button">Подробнее</button>
+						<a href="product.html" class="catalog__button">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -242,7 +272,7 @@
 						<span class="catalog__target">Для любых целей</span>
 						<img src="img/rect.png" alt="">
 						<span class="catalog__price">от 11 570 руб.</span>
-						<button class="catalog__button">Подробнее</button>
+						<a href="product.html" class="catalog__button">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -255,7 +285,7 @@
 						<span class="catalog__target">Для любых целей</span>
 						<img src="img/rect.png" alt="">
 						<span class="catalog__price">от 11 570 руб.</span>
-						<button class="catalog__button">Подробнее</button>
+						<a href="product.html" class="catalog__button">Подробнее</a>
 					</div>
 				</div>  
 			</div>  
@@ -307,9 +337,78 @@
 					<img src="icons/rigth.png" alt="">
 				</div>
 			</div>
+			<div class="create__wrapper">
 
 
+				<div class="container">
+					<div class="create__preim">
+						<div class="create__preim__item">
+							<img src="img/prem1.png" alt="">
+							<span class="create__preim__descr">Высокая прочность 
+								<br> и долговечность ограждений</span>
+						</div>
+						<div class="create__preim__item">
+							<img src="img/prem2.png" alt="">
+							<span class="create__preim__descr">Большое разнообразие 
+								<br> вариантов оформления </span>
+						</div>
+						<div class="create__preim__item">
+							<img src="img/prem3.png" alt="">
+							<span class="create__preim__descr">Неприхотливость 
+								<br>в уходе ограждений</span>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+			</div>
 	 
+	</section>
+
+	<section class="steps">
+		<div class="container">
+			<div class="title title_blue">Ограждения под ключ за несколько шагов</div>
+			<div class="steps__wrapper">
+				<div class="steps__item">
+					<div class="steps__numb">1</div>
+					<div class="steps__line"></div>
+					<div class="steps__title">Замер</div>
+					<div class="steps__text">Срочный замер в этот же день, предварительный расчет 
+						по фотографиям.Срочный замер в этот же день, предварительный расчет 
+						по фотографиямСрочный замер в этот же день, предварительный расчет 
+						по фотографиям</div>
+				</div>
+				<div class="steps__item">
+					<div class="steps__numb">2</div>
+					<div class="steps__line"></div>
+					<div class="steps__title">Проектирование</div>
+					<div class="steps__text">Срочное проектирование, выбор материала и цвета.</div>
+				</div>
+				<div class="steps__item">
+					<div class="steps__numb">3</div>
+					<div class="steps__line"></div>
+					<div class="steps__title">Производство и доставка</div>
+					<div class="steps__text">Собственное производство
+						за 1 день, быстрая доставка.</div>
+				</div>
+				<div class="steps__item">
+					<div class="steps__numb">4</div>
+					<div class="steps__line"></div>
+					<div class="steps__title">Установка</div>
+					<div class="steps__text">Монтаж собственными специалистами за 1 день.<br>
+						Монтаж собственными специалистами за 1 день<br>
+						Монтаж собственными специалистами за 1 день</div>
+				</div>
+				<div class="steps__item">
+					<div class="steps__numb">5</div>
+					<div class="steps__line"></div>
+					<div class="steps__title">Гарантия</div>
+					<div class="steps__text">Гарантия 5 лет на все этапы 
+						– от проекта до конечного изделия.
+						Работаем по СП, ГОСТ, СНИП.</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 
@@ -415,51 +514,33 @@
 			</div>
 		</div>
 	</section>
-	<section class="steps">
+
+	<section class="s-quality">
 		<div class="container">
-			<div class="title title_blue">Ограждения под ключ за несколько шагов</div>
-			<div class="steps__wrapper">
-				<div class="steps__item">
-					<div class="steps__numb">1</div>
-					<div class="steps__line"></div>
-					<div class="steps__title">Замер</div>
-					<div class="steps__text">Срочный замер в этот же день, предварительный расчет 
-						по фотографиям.Срочный замер в этот же день, предварительный расчет 
-						по фотографиямСрочный замер в этот же день, предварительный расчет 
-						по фотографиям</div>
+		  <div class="quality">
+			<h2 class="title title_white">Гарантия качества</h2>
+ 
+			<div class="quality-slider">
+			  <div class="quality-slider__list">
+				<a class="quality-slider__item"  style="background-image: url('img/sert.png')" alt=""> <div class="quality-slider__title"> Сертификат ISO </div></a> 
+				<a class="quality-slider__item"  style="background-image: url('img/sert.png')" alt=""> <div class="quality-slider__title"> Сертификат ISO </div></a> 
+				<a class="quality-slider__item"  style="background-image: url('img/sert.png')" alt=""> <div class="quality-slider__title"> Сертификат ISO </div></a> 
+				<a class="quality-slider__item"  style="background-image: url('img/sert.png')" alt=""> <div class="quality-slider__title"> Сертификат ISO </div></a> 
+				  
+			  </div>
+				<div class="p-slider__arrow">
+				<div class="p-slider-arrow quality-slider__prev">
+					<img src="icons/leftw.png" alt="">
 				</div>
-				<div class="steps__item">
-					<div class="steps__numb">2</div>
-					<div class="steps__line"></div>
-					<div class="steps__title">Проектирование</div>
-					<div class="steps__text">Срочное проектирование, выбор материала и цвета.</div>
+				<div class="p-slider-arrow quality-slider__next">
+					<img src="icons/rigth.png" alt="">
 				</div>
-				<div class="steps__item">
-					<div class="steps__numb">3</div>
-					<div class="steps__line"></div>
-					<div class="steps__title">Производство и доставка</div>
-					<div class="steps__text">Собственное производство
-						за 1 день, быстрая доставка.</div>
-				</div>
-				<div class="steps__item">
-					<div class="steps__numb">4</div>
-					<div class="steps__line"></div>
-					<div class="steps__title">Установка</div>
-					<div class="steps__text">Монтаж собственными специалистами за 1 день.<br>
-						Монтаж собственными специалистами за 1 день<br>
-						Монтаж собственными специалистами за 1 день</div>
-				</div>
-				<div class="steps__item">
-					<div class="steps__numb">5</div>
-					<div class="steps__line"></div>
-					<div class="steps__title">Гарантия</div>
-					<div class="steps__text">Гарантия 5 лет на все этапы 
-						– от проекта до конечного изделия.
-						Работаем по СП, ГОСТ, СНИП.</div>
-				</div>
+			  </div>
 			</div>
+		  </div>
 		</div>
-	</section>
+	  </section>
+	
 
 	<section class="clients">
 		<div class="container">
@@ -571,42 +652,12 @@
  
 
 
-	<section class="s-portfolio" id="portfolio">
-		<div class="container">
-		  <div class="portfolio">
-			<h2 class="title title_blue">Портфолио</h2>
-			<div class="portfolio__inner">
-			  <div class="portfolio__list">
-				<div class="portfolio__item"></div>
-				<div class="portfolio__item"></div>
-			  </div>
-			  <div class="p-slider">
-				 <div class="p-slider__list">
-					<img class="p-slider__item"  src="img/slideit1.png" alt="">
-					<img class="p-slider__item"  src="img/slideit1.png" alt="">
-					<img class="p-slider__item"  src="img/slideit1.png" alt="">
-					<img class="p-slider__item"  src="img/slideit1.png" alt="">
-					<img class="p-slider__item"  src="img/slideit1.png" alt="">
-					<img class="p-slider__item"  src="img/slideit1.png" alt="">
-				</div>
-				<div class="p-slider__arrow">
-				  <div class="p-slider-arrow p-slider__prev">
-					<img src="icons/leftw.png" alt="">
-				  </div>
-				  <div class="p-slider-arrow p-slider__next">
-					<img src="icons/rigth.png" alt="">
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </section>
+
 
 
 	<section class="contacts">
 		<div class="container">
-			<h2 class="title title_blue" >Наши контакты</h2>
+			<h2 class="title title_blue title_left" >Наши контакты</h2>
 			<div class="contacts__wrapper">
 				
 				<div class="contacts__information">
@@ -635,31 +686,7 @@
 	</section>
 
 	
-	<section class="s-quality">
-		<div class="container">
-		  <div class="quality">
-			<h2 class="title title_white">Гарантия качества</h2>
- 
-			<div class="quality-slider">
-			  <div class="quality-slider__list">
-				<a class="quality-slider__item"  style="background-image: url('img/sert.png')" alt=""> <div class="quality-slider__title"> Сертификат ISO </div></a> 
-				<a class="quality-slider__item"  style="background-image: url('img/sert.png')" alt=""> <div class="quality-slider__title"> Сертификат ISO </div></a> 
-				<a class="quality-slider__item"  style="background-image: url('img/sert.png')" alt=""> <div class="quality-slider__title"> Сертификат ISO </div></a> 
-				<a class="quality-slider__item"  style="background-image: url('img/sert.png')" alt=""> <div class="quality-slider__title"> Сертификат ISO </div></a> 
-				  
-			  </div>
-				<div class="p-slider__arrow">
-				<div class="p-slider-arrow quality-slider__prev">
-					<img src="icons/leftw.png" alt="">
-				</div>
-				<div class="p-slider-arrow quality-slider__next">
-					<img src="icons/rigth.png" alt="">
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </section>
+	
 
 	<footer class="footer">
 		<div class="container">

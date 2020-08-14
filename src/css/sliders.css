@@ -2,7 +2,7 @@
 .s-portfolio {
     z-index: 1;
     height: 810px;
-    padding: 60px 0 35px;
+
     background-color: #f0f0f0
 }
 
@@ -521,7 +521,8 @@
     width: 100%;
     height: 100%;
     top: 0;
-    background-color: rgba(0, 0, 0, .56)
+    background-color: rgba(0, 0, 0, .56);
+    z-index: 10001;
 }
 
 .modal {
@@ -535,6 +536,7 @@
     padding: 40px;
     border-radius: 10px;
     background-color: #fff;
+    z-index: 90000;
      
 }
 
@@ -634,13 +636,29 @@
     text-decoration: underline;
 }
 
+
+
 .сreate__arrow {
     position: absolute;
     display: flex;
     justify-content: center;
     right: 0;
-    bottom: 20px;
+    top: 440px;
     left: 0;
+}
+
+@media (max-width: 1070px) {
+    .сreate__arrow {
+        top: 400px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .сreate__arrow {
+        top: 440px;
+    }
+    
 }
 
 .сreate__prev {

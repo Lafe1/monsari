@@ -104,7 +104,7 @@
 			height: 60px
 			margin: 150px auto 0 auto
 	.steps
-		padding: 62px 0 49px
+		padding: 15px 0 49px
 		&__wrapper
 			display: flex
 			flex-direction: column
@@ -207,14 +207,35 @@
 			width: 290px
 			height: 227px
 	.title
-		padding-top: 10px
+		padding-top: 20px
 	.create
 		&__item
 			min-height: 525px
 			border-right: 0px
 	.create__item
 		padding: 0 15px 144px 15px
-	
+		&:nth-child(3)
+			padding-bottom: 50px
+	.create__wrapper
+		background: url('../../img/bggg2.png') no-repeat
+		background-size: cover
+	.create__preim
+		justify-content: center
+		align-items: center
+		padding-top: 0px
+		flex-direction: column
+		height: 391px
+		padding-bottom: 70px
+		&__item
+			margin-bottom: 30px
+			width: 60%
+	.clients__grid
+		margin-top: 20px	
+	.s-portfolio
+		height: 600px 
+	.p-slider__arrow
+		margin-top: -30px
+
 @media (max-width: 598px)
 	.others__items
 		margin-right: 0
@@ -222,6 +243,9 @@
 		margin-top: 22px
 	.create__item__header
 		margin-top: 83px
+	.create__preim__item
+		width: 100%
+		 
 		
 @media (max-width: 595px)
 	.container
@@ -294,6 +318,12 @@
 	.slick-dots
 		bottom: -60px !important
 		left: 150px !important
+	.feed-form 
+		input
+			width: 250px
+@media (max-width: 415px)
+	.p-slider__arrow
+		margin-top: 0px
 @media (max-width: 320px)
 	.advantages__grid 
 		flex-direction: column
