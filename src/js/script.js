@@ -156,6 +156,23 @@ var slider4 = '.create__list';
 });
 
 
+var slider5 = '.reviews__list';
+    $(slider5).slick({
+      dots: false,
+      infinite: true,
+      arrows: false,
+      fade: true,
+      cssEase: 'linear',
+      autoplay: true,
+      autoplaySpeed: 5000,
+     
+});
+
+
+
+
+
+
 $('[data-modal=consultation]').on('click', function() {
   $('.overlay, #consultation').fadeIn();
 });
