@@ -633,3 +633,21 @@
     color: #a9a9a9;
     text-decoration: underline;
 }
+
+.сreate__arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    right: 0;
+    bottom: 20px;
+    left: 0;
+}
+
+.сreate__prev {
+    margin-right: 5px;
+}
+
+.сreate__next {
+    margin-left: 5px;
+}
+

@@ -57,7 +57,7 @@ $(document).ready(function(){
     if(i == (line.length-1)) {
       line[i].style.height = '0';
     } else {
-      line[i].style.height = stepItem[i].offsetHeight + 'px';
+      line[i].style.height = stepItem[i].offsetHeight + 10 + 'px';
     }
   }
 
@@ -128,6 +128,26 @@ var slider3 = '.quality-slider__list';
 });
 
 
+var slider4 = '.create__list';
+    $(slider4).slick({
+		slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow:'.сreate__prev',
+    nextArrow:'.сreate__next',
+    responsive: [
+        {
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+      
+});
+
+
 $('[data-modal=consultation]').on('click', function() {
   $('.overlay, #consultation').fadeIn();
 });
@@ -142,3 +162,54 @@ $('.button_mini').each(function(i) {
       $('.overlay, #order').fadeIn('slow');
   })
 });
+  let $slider = $('.header__adv-wrapper').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  cssEase: 'ease',
+  useCSS: true,
+  prevArrow:'.header__arrow_left',
+  nextArrow:'.header__arrow_right',
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+  //массив с фонами
+  // var bgs = [
+  //   '../img/background0.jpg',   //фон при переходе на 1 слайдер
+  //   '../img/background0.jpg', //фон при переходе на 2 слайдер
+  //   '../img/background0.jpg',  //фон при переходе на 3 слайдер
+  //   // .....
+  // ];
+
+  //Смена фона
+  let img = document.querySelectorAll('.header__img img');
+  let bgs = [];
+  img.forEach(item => {
+    bgs.push(item.getAttribute('src'));
+  })
+
+  $slider.on('afterChange', function(e, slick, index) {
+    let background = `url('${bgs[index]}')`;
+    $('.header').css({
+      'background': background,
+      'background-repeat': 'no-repeat',
+	    'background-position': 'bottom center',
+	    'background-size': 'cover'
+    })
+  });
+

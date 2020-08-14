@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	
 	<link rel="stylesheet" href="css/sliders.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	
@@ -26,7 +27,7 @@
 				<div class="nav__logo">
 					<img src="./icons/logo.png" alt="Logo">
 				</div>
-				<ul class="nav__menu nav__menu_toggle">
+				<ul class="nav__menu">
 					<li class="nav__item nav__item_active"><a href="#">Главная</a></li>
 					<li class="nav__item"><a href="#">Портфолио</a></li>
 					<li class="nav__item"><a href="#">Каталог</a></li>
@@ -75,7 +76,12 @@
 			</div>
 		</div>
 	</div>
-	<header class="header">
+	<header style="
+	background: url('../img/background0.jpg');
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+	" class="header">
 		<div class="container">
 			<div class="header__wrapper">
 				<h1 class="title">
@@ -85,12 +91,34 @@
 					Бесплатная консультация
 				</button>
 				<div class="header__adv">
-					<div class="header__adv-title">
-						Работы любой сложности <br> для коммерческих помещений
-					</div>
-					<div class="header__adv-list">
-						<div class="header__adv-item">Изготовление и монтаж за 1 день</div>
-						<div class="header__adv-item">Гарантия 5 лет</div>
+					<div class="header__adv-wrapper">
+						<div class="header__adv-wrap">
+							<div class="header__adv-title">
+								Работы любой сложности <br> для коммерческих помещений
+							</div>
+							<div class="header__adv-list">
+								<div class="header__adv-item">Изготовление и монтаж за 1 день</div>
+								<div class="header__adv-item">Гарантия 5 лет</div>
+							</div>
+						</div>
+						<div class="header__adv-wrap">
+							<div class="header__adv-title">
+								Работы любой сложности <br> для коммерческих помещений
+							</div>
+							<div class="header__adv-list">
+								<div class="header__adv-item">Изготовление и монтаж за 1 день</div>
+								<div class="header__adv-item">Гарантия 5 лет</div>
+							</div>
+						</div>
+						<div class="header__adv-wrap">
+							<div class="header__adv-title">
+								Работы любой сложности <br> для коммерческих помещений
+							</div>
+							<div class="header__adv-list">
+								<div class="header__adv-item">Изготовление и монтаж за 1 день</div>
+								<div class="header__adv-item">Гарантия 5 лет</div>
+							</div>
+						</div>
 					</div>
 					<div class="header__arrows">
 						<div class="header__arrow header__arrow_left">
@@ -100,21 +128,16 @@
 							<img src="./icons/right.svg" alt="Right">
 						</div>
 					</div>
+					<div style="display: none;" class="header__img">
+						<img src="../img/background0.jpg" alt="">
+						<img src="../img/slideit1.png" alt="">
+						<img src="../img/background2.jpg" alt="">
+					</div>
 				</div>
 			</div>
 			<div class="header__location">Санкт-Петербург и Ленинградская область</div>
-			<div class="header__add-dots">
-				<div class="header__add-dot header__add-dot_active"></div>
-				<div class="header__add-dot"></div>
-				<div class="header__add-dot"></div>
-			</div>
 		</div>
 	</header>
-
-
-
-
-
 
 
 
@@ -248,7 +271,7 @@
 
 
 	<section class="create">
-		<div class="container">
+		 
 			<h2 class="title title_white title_absolute">Изготовление ограждений</h2>
 			<div class="create__list">
 				 <div class="create__item">
@@ -261,20 +284,32 @@
 					</div>
 				 </div>
 
-				 <div class="create__item">
-					<div class="create__item__header">Для улицы</div>
+				 
+
+				 <div class="create__item create__item_pom">
+					<div class="create__item__header">Для помещений</div>
 					<div class="create__item__content">
-						Компания «Летний сад» проектирует, производит и монтирует уличные ограждения для террас, пандусов, парапетов используя специальную нержавеющую сталь марки AISI 304, которая обладает превосходными прочностными и антикоррозийными свойствами. 
+						Для установки ограждений внутри помещений компания «Летний сад» использует нержавеющую сталь марки AISI 201, которая обладает высокой прочностью, пластичностью, твердостью, а также низкой теплопроводностью.
 						<br>
 						<br>
-						Разнообразие и стильный дизайн ограждающих конструкций сможет подчеркнуть экстерьер любого здания.
+						Использование ограждений позволит увеличить безопасность  нахождения людей на лестницах, пролётах и т.д.
 					</div>
 				 </div>
+
+				
 				  
+			</div>
+			<div class="сreate__arrow">
+				<div class="p-slider-arrow сreate__prev">
+					<img src="icons/leftw.png" alt="">
+				</div>
+				<div class="p-slider-arrow сreate__next">
+					<img src="icons/rigth.png" alt="">
+				</div>
 			</div>
 
 
-		</div>
+	 
 	</section>
 
 
@@ -547,9 +582,6 @@
 			  </div>
 			  <div class="p-slider">
 				 <div class="p-slider__list">
-				 
-					 
-					 
 					<img class="p-slider__item"  src="img/slideit1.png" alt="">
 					<img class="p-slider__item"  src="img/slideit1.png" alt="">
 					<img class="p-slider__item"  src="img/slideit1.png" alt="">

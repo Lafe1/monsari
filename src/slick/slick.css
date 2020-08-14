@@ -242,17 +242,18 @@
     height: 10px;
     padding: 0;
     border: 0;
-    background-color: #a9a9a9
+    background-color: #a9a9a9;
 }
 
 .slick-dots li button:after {
     position: absolute;
     top: 50%;
     left: 50%;
-    display: none;
-    width: 26px;
-    height: 26px;
-    content: '';
-    transform: translate(-50%,-50%);
-    border: 1px solid #4d63aa
+    display: block;
+    width: 10px;
+	height: 10px;
+	border: 1px solid #ffffff;
+	border-radius: 10px;
+	margin-right: 14px;
+	cursor: pointer;
 }
