@@ -6,7 +6,8 @@ $(document).ready(function(){
 			type: 'image',
 			tLoading: '',
 			gallery:{
-				enabled: true,
+        enabled: true,
+        tCounter: ''
 			},
 			removalDelay: 300
 		});
