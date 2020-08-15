@@ -1,5 +1,17 @@
 $(document).ready(function(){
-	
+  
+  $('.gallery').each(function() { // the containers for all your galleries
+		$(this).magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			tLoading: '',
+			gallery:{
+				enabled: true,
+			},
+			removalDelay: 300
+		});
+  });
+  
 	//Tabs
 	$('.header__add-dots').on('click', '.header__add-dot:not(.header__add-dot_active)', function() {
 		console.log($(this).index());
@@ -104,6 +116,12 @@ var slider1 = '.p-slider__list';
     ]
       
 });
+
+// $('.p-slider__list').slickLightbox({
+//   src: 'src',
+//   itemSelector: '.js-gallery-popup img',
+//   background: 'rgba(0, 0, 0, .7)'
+// });
 
 
 var slider3 = '.quality-slider__list';
